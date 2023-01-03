@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homeLayout"
+    android:background="@color/earthDark"
+    tools:context=".HomeActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="128dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:paddingBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/createH1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/add_a_crib"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/earthGreen"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profilePhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+
+
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_add_home_work_24"
+                    app:shapeAppearanceOverlay="@style/roundedImage" />
+
+                <!--                    <ImageView-->
+                <!--                        android:id="@+id/addPhotoButton"-->
+                <!--                        android:layout_width="60dp"-->
+                <!--                        android:layout_marginStart="-60dp"-->
+                <!--                        android:layout_marginTop="5dp"-->
+                <!--                        android:layout_height="60dp"-->
+                <!--                        app:srcCompat="@drawable/ic_baseline_add_circle_24" />-->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Type of home"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/earthGreen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/fields_round_corner"
+                android:hint="Name"
+                android:nextFocusDown="@+id/passwordEditText"
+
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="#52FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/locationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:layout_margin="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/earthGreen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/locationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:hint="San Francisco"
+                android:background="@drawable/fields_round_corner"
+
+                android:nextFocusDown="@+id/passwordEditText"
+
+                android:textColor="@color/white"
+                android:textColorHint="#52FFFFFF"
+                />
+            <TextView
+                android:id="@+id/pronounsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_margin="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/earthGreen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pronounsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:hint="Kshs"
+                android:background="@drawable/fields_round_corner"
+                android:nextFocusDown="@+id/passwordEditText"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:inputType="number"
+                android:textColorHint="#52FFFFFF"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/websiteLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amenities"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/earthGreen"
+                android:textSize="16sp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold" />
+        <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorlessGrey"
+                android:text="WiFi"
+                android:onClick="onCheckboxClicked"/>-->
+            <!--<CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pets allowed"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pets allowed"
+                android:onClick="onCheckboxClicked"/>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Pets allowed" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pets allowed"
+                android:onClick="onCheckboxClicked"/><CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pets allowed"
+            android:onClick="onCheckboxClicked"/>
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pets allowed"
+                android:onClick="onCheckboxClicked"/>
+        </LinearLayout>-->
+
+            <TextView
+                android:id="@+id/MyStoryLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_margin="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/earthGreen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/MyStoryEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:inputType="textMultiLine"
+
+                android:gravity="start"
+                android:background="@drawable/fields_round_corner"
+                android:minHeight="250dp"
+
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="#52FFFFFF"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonNext"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/green_button"
+                android:text="UPLOAD"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/earthDark"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
